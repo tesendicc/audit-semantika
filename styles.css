@@ -270,7 +270,7 @@ textarea:focus {
   color: var(--color-purple-darker);
 }
  
-main > section {
+#main-content > section {
   min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
