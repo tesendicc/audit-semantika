@@ -45,7 +45,7 @@
 
     <section class="hero">
       <img
-        src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1600&q=80"
+        src="slike/1.jpg"
         class="hero-bg-image"
         alt="Rows of handmade ceramic pots and vases in blue, teal, and terracotta tones, arranged closely together on workshop shelves"
       />
@@ -53,11 +53,9 @@
 
       <div class="wrap hero-content">
         <p class="eyebrow">one piece at a time</p>
-        <!-- p umjesto h1 -->
-        <p class="hero-heading">hand-made pottery</p>
+        <h1>hand-made pottery</h1>
         <p class="hero-copy">Every mug, bowl, and vase from Riverbend Studio is wheel-thrown, glazed, and fired by hand in our small workshop.</p>
-        <!-- div umjesto dugmeta sa onclick handlerom. -->
-        <div class="button button-primary" onclick="document.getElementById('collection').scrollIntoView({behavior: 'smooth'})">Browse the collection</div>
+        <a class="button button-primary" href="#collection">Browse the collection</a>
       </div>
     </section>
 
@@ -120,13 +118,15 @@
               </a>
             </div>
           </li>
+          <p class="collection-note">More pieces added every season — join our newsletter for restock alerts.</p>
         </ul>
       </div>
     </section>
 
     <section id="story" class="story">
       <div class="wrap">
-        <h2>Our story</h2>
+        <!-- dupli id -->
+        <h2 id="story">Our story</h2>
         <p>Riverbend Studio started in a converted garage in 2016. What began as a hobby turned into a small working studio, now run by two potters and a rotating cast of very supervisory cats.</p>
         <p>We believe good pottery should be used, not just displayed — so everything we make is built for daily life: coffee in the morning, dinner at night, flowers on the table.</p>
       </div>
@@ -135,28 +135,29 @@
     <section id="process" class="process">
       <div class="wrap">
         <h2>How each piece is made</h2>
-
-        <!-- div umjesto ol ili li liste, namjerna semantička greška -->
-        <div class="process-steps">
-          <div>
-            <h3>1. Throwing</h3>
+ 
+        <!-- heading  order -->
+        <ol class="process-steps">
+          <li>
+            <h4>1. Throwing</h4>
             <p>Clay is centered and shaped on the wheel by hand.</p>
-          </div>
-          <div>
-            <h3>2. Trimming</h3>
+          </li>
+          <li>
+            <h4>2. Trimming</h4>
             <p>Once leather-hard, each piece is trimmed to refine its final shape and foot.</p>
-          </div>
-          <div>
-            <h3>3. Bisque firing</h3>
+          </li>
+          <li>
+            <h4>3. Bisque firing</h4>
             <p>Pieces are fired once to harden the clay before glazing.</p>
-          </div>
-          <div>
-            <h3>4. Glazing &amp; final firing</h3>
+          </li>
+          <li>
+            <h4>4. Glazing &amp; final firing</h4>
             <p>Glaze is applied by hand, then fired a second time at a higher temperature.</p>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
+ 
 
     <section id="contact" class="contact">
       <div class="wrap">
